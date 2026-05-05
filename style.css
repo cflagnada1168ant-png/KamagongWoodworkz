@@ -1,39 +1,89 @@
 /*This is our global css file.*/
 @font-face {
-    font-family: GochiHand;
-    src: url('./fonts/gochihand/GochiHand-Regular.ttf') format('truetype');
+    font-family: Cinzel;
+    src: url('Font\Cinzel.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: Caveat;
-    src: url('./fonts/Caveat/Caveat-Regular.ttf') format('truetype');
+    font-family: PlayfairDisplay; regular;
+    src: url('Font\PlayfairDisplay-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: Montserrat;
-    src: url('./fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+    font-family: PlayfairDisplay; semi-bold;
+    src: url('Font\PlayfairDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Freesans;
+    src: url('Font\FreeSans.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: PlayfairDisplay;
-    src: url('./fonts/Playfair_Display/PlayfairDisplay-ExtraBold.ttf') format('truetype');
+    font-family: Freesans; bold;
+    src: url('Font\FreeSansBold.otf') format('opentype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: Freesans; oblique;
+    src: url('Font\FreeSansOblique.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Freesans; bold oblique;
+    src: url('Font\FreeSansBoldOblique.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: nimbus san l; regular;
+    src: url('Font\NimbusSanL-Reg.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: nimbus san l; bold;
+    src: url('Font\NimbusSanL-Bol.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: nimbus san l; light;
+    src: url('Font\nimbussansdot-ultrligh.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 :root {
 --kamagong:#5C2C18; /*Kamagong logo Color*/
 /*For Website Colors*/
---white: #ffffff;
+--white: #ffffff; /*for backrounds and text*/
 --dark: #1e4f6b; /*Darkest We can Go on Backgrounds*/
 --accent: #4fb8e0; /*Like navbar background*/
 --primary-color: #306f91; /*Logo Color*/
