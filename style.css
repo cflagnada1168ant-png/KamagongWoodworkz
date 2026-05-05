@@ -84,20 +84,11 @@
 --kamagong:#5C2C18; /*Kamagong logo Color*/
 /*For Website Colors*/
 --white: #ffffff; /*for backrounds and text*/
---dark: #1e4f6b; /*Darkest We can Go on Backgrounds*/
---accent: #4fb8e0; /*Like navbar background*/
---primary-color: #306f91; /*Logo Color*/
---primary-light: #afc3dc; /*Light Colored Backgrounds*/
---primary-dark: #11263b; /*Color for those Background is lighter*/
---secondary-light-dark: #356b86; /*Lighter Version(For Soft Look)*/
 --secondary-light: #8a96b0; /*Light Gray*/
---secondary-dark: #234e63; /*Darker version of primary color*/
 --soft-blue: #dceaf1; /*(For Soft Look)*/
 --surface: #f5f9fb;   /*Off-White background*/
 --surface-strong: #edf4f7; /*For it to pop on white BG*/
 --surface-line: #d8e5ec; /*Border on white*/
---gold:       #F0B13D; /* For Buttons/ Accent-Text*/
---gold-dark:  #d9973a; /*For Buttons Hover*/
 }
 *{
     margin: 0;

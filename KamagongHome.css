@@ -11,14 +11,16 @@ html {
     box-sizing: border-box;
     background:
     radial-gradient(circle at left center,
-        rgba(9,30,61,0.88),
-        rgba(255, 255, 255, 0) 60%
+    rgba(255, 253, 246, 1) 0%,       /* Pure light Ivory */
+    rgba(242, 233, 218, 0.8) 40%,    /* Smooth Beige */
+    rgba(224, 210, 190, 0) 70%
     ),
     radial-gradient(circle at right center,
-        rgba(9,30,61,0.88),
-        rgba(255, 255, 255, 0) 60%
+     rgba(224, 210, 190, 1) 0%,       /* Light Tan-Brown */
+     rgba(242, 233, 218, 0.8) 50%,    /* Smooth Beige */
+     rgba(255, 253, 246, 0) 75%
     ),
-    url("assets/home-hero.jpg") center/cover no-repeat;
+    url("KAMAGONG-LOGO.png") center/cover no-repeat;
     position: relative;
     display: flex;
     flex-direction: column;
