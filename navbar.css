@@ -1,14 +1,14 @@
 :root {
-  --nav-primary:   #306f91;
-  --nav-dark:      #1e4f6b;
+  --nav-primary:  #502d1e;
+  --nav-dark:     #502d1e;
   --nav-accent:    #4fb8e0;
   --nav-height:    70px;
   --nav-ease:      cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Main navbar*/
-.navigation {
-  position: sticky;
+.navigation { 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -16,16 +16,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2.5rem;
-  background: rgba(255, 255, 255, 0.85);
+  padding: 0 clamp(1rem, 5vw, 2.5rem);
+  background: #dad5d3d8;
   backdrop-filter: blur(16px) saturate(1.5);
   -webkit-backdrop-filter: blur(16px) saturate(1.5);
-  border-bottom: 1px solid rgba(48, 111, 145, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.322);
   box-shadow: 0 2px 24px rgba(48, 111, 145, 0.07);
   z-index: 1000;
 }
 
-/*Logo*/
+/*Logo*/  
 .navigation .logo {
   font-family: PlayFairDisplay;
   font-size: clamp(1.1rem, 2.2vw, 1.7rem);
@@ -39,7 +39,7 @@
   transition: color 0.25s ease, transform 0.25s ease;
 }
 .navigation .logo:hover {
-  color: --kamagong-meta:#502d1e;
+  color:#502d1e;
   transform: scale(1.02);
 }
 
@@ -73,12 +73,12 @@
   width: 0;
   height: 2px;
   border-radius: 2px;
-  background: var(--nav-accent);
+  background: #502d1e;
   transition: width 0.3s var(--nav-ease);
 }
 .navigation .nav-links a:hover {
-  color: var(--nav-dark);
-  background: rgba(48, 111, 145, 0.07);
+  color: #502d1e;
+  background: #502d1e3b;
 }
 .navigation .nav-links a:hover::after {
   width: 55%;
@@ -117,6 +117,8 @@
   transition: transform 0.3s var(--nav-ease);
   display: block;
   line-height: 1;
+  color: inherit; 
+    display: block !impo rtant;
 }
 
 /*Responsiveness (900px)*/
@@ -154,6 +156,10 @@
     transition:
       max-height 0.42s var(--nav-ease),
       padding    0.42s var(--nav-ease);
+  }
+
+  .navigation .nav-links:not(.active) {
+    display: none; 
   }
 
   /* Open state (toggled via JS) */
@@ -222,4 +228,14 @@
   .navigation .logo {
     font-size: 1rem;
   }
+}
+
+* {
+    box-sizing: border-box; /* This is the most important line */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents any sideways wobbling */
 }
