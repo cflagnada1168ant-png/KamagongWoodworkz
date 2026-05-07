@@ -1,0 +1,33 @@
+position: relative;
+
+.background-container {
+  /* Replace 'your-image.jpg' with your actual image path */
+  background-image: url('your-image.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-box {
+  /* The last number (0.6) controls transparency (0 to 1) */
+  background-color: rgba(255, 255, 255, 0.6); 
+  padding: 40px;
+  width: 70%;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 8px; /* Optional: rounds the corners */
+  
+  /* Optional: adds a blur effect to the background (Glassmorphism) */
+  backdrop-filter: blur(5px); 
+  
+  /* Makes sure the box stands out */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.overlay-box h2, .overlay-box p {
+  color: #333; /* Dark text for contrast against light background */
+  margin: 10px 0;
+}

@@ -11,16 +11,16 @@ html {
     box-sizing: border-box;
     background:
     linear-gradient(to left,
-    #f2e9dacc 0%,        /* Start with Smooth Beige on the right */
-    #f2e9dacc 15%,       /* Hold the beige for 15% of the width */
-    transparent 40%,     /* Fade out to completely transparent */
-    transparent 60%,     /* Keep the middle transparent for the logo */
-    #f2e9dacc 85%,       /* Fade back into Smooth Beige */
-    #f2e9dacc 100%       /* End with Smooth Beige on the left */
+    #502d1e 0%,       
+    #502d1e83 2%,     
+    transparent 40%,    
+    transparent 60%,     
+    #502d1e8c 98%,       
+    #502d1e 100%     
     ),
 
 
-    url("KAMAGONG-LOGO.png") center/cover no-repeat;
+    url("Kamagong-backround.png") center/cover no-repeat;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -58,10 +58,9 @@ html {
 }
 
 .hero-content h1 {
-    font-family: Caveat, cursive;
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: var(--white);
+    font-family: PlayfairDisplay, bold;
+    font-size: 2.3rem;
+    font-weight: 1000;
     margin-bottom: 0;
     animation: glow-animation 1.5s ease-in-out infinite alternate;
 }
@@ -99,7 +98,7 @@ html {
     line-height: 1.7;
     font-family: Montserrat, sans-serif;
     font-style: normal;
-    color: rgba(255, 255, 255, 0.92);
+    color: rgba(0, 0, 0, 0.92);
 }
 
 .btn-hero {
@@ -138,7 +137,7 @@ html {
 
 .btn-2:hover {
     background: var(--white);
-    color: var(--primary-dark);
+    color: var(;#502d1e;);
     transform: scale(1.05);
 }
 
@@ -931,4 +930,12 @@ html {
         gap: 30px;
         text-align: center;
     }
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    position: relative;
 }
