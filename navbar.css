@@ -30,7 +30,7 @@
   font-family: PlayFairDisplay;
   font-size: clamp(1.1rem, 2.2vw, 1.7rem);
   font-weight: bold;
-  color: var(--nav-primary);
+  color: #502d1e;
   text-decoration: none;
   white-space: nowrap;
   flex-shrink: 0;
@@ -39,7 +39,7 @@
   transition: color 0.25s ease, transform 0.25s ease;
 }
 .navigation .logo:hover {
-  color: var(--nav-dark);
+  color: --kamagong-meta:#502d1e;
   transform: scale(1.02);
 }
 
