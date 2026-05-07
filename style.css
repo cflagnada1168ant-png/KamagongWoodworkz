@@ -81,8 +81,9 @@
 
 
 :root {
---kamagong:#5C2C18; /*Kamagong logo Color*/
-/*For Website Colors*/
+--kamagong-meta:#502d1e; /*newmeta*/
+--kamagong:#5c2c18; /*Kamagong logo Color*/
+--nav-bar: #fff7e9;
 --white: #ffffff; /*for backrounds and text*/
 --secondary-light: #8a96b0; /*Light Gray*/
 --soft-blue: #dceaf1; /*(For Soft Look)*/

@@ -10,16 +10,16 @@ html {
     padding: 96px 24px 48px;
     box-sizing: border-box;
     background:
-    radial-gradient(circle at left center,
-    rgba(255, 253, 246, 1) 0%,       /* Pure light Ivory */
-    rgba(242, 233, 218, 0.8) 40%,    /* Smooth Beige */
-    rgba(224, 210, 190, 0) 70%
+    linear-gradient(to left,
+    #f2e9dacc 0%,        /* Start with Smooth Beige on the right */
+    #f2e9dacc 15%,       /* Hold the beige for 15% of the width */
+    transparent 40%,     /* Fade out to completely transparent */
+    transparent 60%,     /* Keep the middle transparent for the logo */
+    #f2e9dacc 85%,       /* Fade back into Smooth Beige */
+    #f2e9dacc 100%       /* End with Smooth Beige on the left */
     ),
-    radial-gradient(circle at right center,
-     rgba(224, 210, 190, 1) 0%,       /* Light Tan-Brown */
-     rgba(242, 233, 218, 0.8) 50%,    /* Smooth Beige */
-     rgba(255, 253, 246, 0) 75%
-    ),
+
+
     url("KAMAGONG-LOGO.png") center/cover no-repeat;
     position: relative;
     display: flex;
