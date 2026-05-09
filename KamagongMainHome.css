@@ -18,7 +18,7 @@ html {
     #502d1e80 98%,       
     #502d1e 100%     
     ),
-
+}
 
     url("") center/cover no-repeat;
     position: relative;
@@ -970,3 +970,4 @@ html, body {
 .logo-wrapper:hover {
     transform: scale(1.02);
 }
+

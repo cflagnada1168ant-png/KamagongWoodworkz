@@ -14,3 +14,45 @@
                     <div class="suggestions" id="suggestions" role="listbox" aria-label="Destination suggestions"></div>
                 </div>
             </div>
+
+
+        /* Floating "Inquire Now" Button Area */
+        .inquire-widget {
+            position: absolute;
+            bottom: 30px;
+            right: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 5;
+        }
+
+        .inquire-pointer {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 12px solid #EBE4DD;
+            margin-bottom: -1px; 
+            filter: drop-shadow(0 -2px 2px rgba(0,0,0,0.2));
+            z-index: 2;
+        }
+
+        .inquire-btn {
+            background-color: #EBE4DD;
+            color: #3B281B;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 8px 24px;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            z-index: 3;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .inquire-btn:hover {
+            background-color: #fff;
+            transform: translateY(-3px);
