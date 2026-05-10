@@ -102,7 +102,7 @@
 body{
     min-height: 100vh;
     min-height: 100dvh;
-    font-family: Montserrat, sans-serif;
+    font-family: playfairdisplay;
 }
 /*FOOTER*/
 .site-footer {
