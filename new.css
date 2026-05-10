@@ -10,66 +10,10 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Navigation Bar */
-.navbar {
-    background-color: #f2e3d5; /* Light cream/beige from image_bb0439.jpg */
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; fixed;
-    border-bottom: 1px solid #080808;
-    z-index: 12;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.nav-container {
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links {
-    display: flex;
-    gap: 100px;
-    flex: 1;
-    justify-content: center;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #3e2723;
-    font-weight: 700;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-}
-
-/* Floating Circular Logo */
-.logo-wrapper {
-    background-color: #f2e3d5;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 2px solid #3e2723;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 85px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.logo-img {
-    width: 250%;
-    height: 100;
-}
-
 
 .hero {
     height: calc(100vh - 80px);
-    background: url('image_bb0439.jpg') no-repeat center center/cover;
+    background: url('Your paragraph text (1).png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,13 +23,15 @@ body {
 .hero-overlay {
     background-color: rgba(255, 255, 255, 0.35); 
     backdrop-filter: blur(4px); 
+    border: 1px solid #000000;
     padding: 40px 80px;
     text-align: center;
 }
 
 .main-title {
-    font-size: 4.5rem;
-    color: #3e2723;
+    font-size: 5.5rem;
+    color: #3e2723; 
+    -webkit-text-stroke: 0.5px #5e545496;
     letter-spacing: 8px;    
     line-height: 1;
 }
@@ -93,10 +39,21 @@ body {
 .sub-title {
     font-size: 4rem;
     color: #3e2723;
-    font-style: PlayfairDisplay; regular;
-    font-weight: 400;
+    -webkit-text-stroke: 0.5px #5e545496;
+    font-style: PlayfairDisplay;
+    font-weight: 500;
     margin-top: 5px;
-    letter-spacing: 1px;
+    letter-spacing: 15px;
+}
+
+.custom {
+    font-size: 2rem;
+    color: #3e2723;
+    -webkit-text-stroke: 0.5px #5e545496;
+    font-style: PlayfairDisplay;
+    font-weight: 500;
+    margin-top: 5px;
+    letter-spacing: 5px;
 }
 
  /* Floating "Inquire Now" Button Area */

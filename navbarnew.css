@@ -1,0 +1,72 @@
+/* Navigation Bar */
+.navbar {
+    background-color: #f2e3d5; /* Light cream/beige from image_bb0439.jpg */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #080808;
+    z-index: 100;
+    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  position: sticky;
+  top: 0; /* Sticks to the top edge */
+  z-index: 100; /* Keeps it above other content */
+
+}
+
+.navbar {
+  position: sticky;
+  top: 0; /* Sticks to the top edge */
+  z-index: 100; /* Keeps it above other content */
+
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 100px;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3e2723;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* Floating Circular Logo */
+.logo-wrapper {
+    background-color: #f2e3d5;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid #3e2723;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 85px;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo-img {
+    width: 250%;
+    height: auto;
+    transition: all 0.5s ease;
+}

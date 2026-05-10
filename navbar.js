@@ -64,3 +64,16 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth > 900) closeMenu();
   });
 });
+
+
+window.addEventListener('scroll', function() {
+  const nav = document.getElementById('main-nav');
+  
+  // If scrolled down more than 50px, add the class
+  if (window.scrollY > 50) {
+    nav.classList.add('scrolled');
+  } else {
+    // If at the top, remove the class
+    nav.classList.remove('scrolled');
+  }
+});
