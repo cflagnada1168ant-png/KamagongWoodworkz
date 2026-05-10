@@ -12,11 +12,24 @@ body {
 
 
 .hero {
-    height: calc(100vh - 80px);
+    height: 100vh;
     background: url('Your paragraph text (1).png') no-repeat center center/cover;
     display: flex;
+    border-bottom: 5px solid #a6ff00;
+    justify-content: center;
+    box-shadow: 0 15px 30px rgb(0, 255, 13);
+    align-items: center;
+    position: relative; 
+    z-index: 10;
+}
+
+.aboutus {
+    height: 120vh;
+    background: url('asd.jpg') no-repeat center center/cover;
+    display: flex; 
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
@@ -56,7 +69,7 @@ body {
     letter-spacing: 5px;
 }
 
- /* Floating "Inquire Now" Button Area */
+
         .inquire-widget {
             position: absolute;
             bottom: 30px;
