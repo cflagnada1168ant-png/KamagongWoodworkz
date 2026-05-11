@@ -1,4 +1,5 @@
 /*This is our global css file.*/
+
 @font-face {
     font-family: Cinzel;
     src: url('Font\Cinzel.ttf') format('truetype');
@@ -82,6 +83,7 @@
 
 :root {
 --kamagong-meta:#502d1e; /*newmeta*/
+--backround: #f5ebe0;
 --kamagong:#5c2c18; /*Kamagong logo Color*/
 --color: #3e2723;
 --nav-bar: #fff7e9;
@@ -102,7 +104,8 @@
 body{
     min-height: 100vh;
     min-height: 100dvh;
-    font-family: playfairdisplay;
+    font-family: 'PlayFairDisplay' serif;
+    background-color: #f5ebe0;
 }
 /*FOOTER*/
 .site-footer {

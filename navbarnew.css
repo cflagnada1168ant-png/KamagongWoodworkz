@@ -1,22 +1,14 @@
 /* Navigation Bar */
 .navbar {
     background-color: #f2e3d5; /* Light cream/beige from image_bb0439.jpg */
-    height: 80px;
+    height: 80px; 
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     border-bottom: 1px solid #080808;
     z-index: 100;
-    
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.navbar {
-  position: sticky;
-  top: 0; 
-  z-index: 100; 
-
 }
 
 .navbar {
@@ -32,6 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .nav-links {
@@ -39,6 +32,7 @@
     gap: 100px;
     flex: 1;
     justify-content: center;
+    
 }
 
 .nav-links a {
@@ -50,11 +44,15 @@
     padding: 0.45rem 0.8rem;
     transition: background-color 0.3s ease;
     border-radius: 8px;
+    
 }
 
 .nav-links a:hover {
             background-color: #3e27231f;
-        }
+            box-shadow: 0 3px 5px #3e2723;
+            transform: translateY(-3px); css
+            
+        } 
 
 
 /* Floating Circular Logo */
@@ -74,7 +72,7 @@
 }
 
 .logo-img {
-    width: 250%;
+    width: 500px;
     height: auto;
     transition: all 0.5s ease;
 }

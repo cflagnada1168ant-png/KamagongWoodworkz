@@ -1,5 +1,48 @@
 /* Basic Reset */
-* {
+:root 
+
+@font-face {
+    font-family: PlayfairDisplay; regular;
+    src: url('Font\PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: PlayfairDisplay; semi-bold;
+    src: url('Font\PlayfairDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: nimbus san l; light;
+    src: url('Font\nimbussansdot-ultrligh.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Freesans; oblique;
+    src: url('Font\FreeSansOblique.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Freesans; bold;
+    src: url('Font\FreeSansBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,6 +66,79 @@ body {
     z-index: 10;
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero-btn {
+    border: none;
+    color:  #3e2723;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-transform: uppercase;
+    font-family: var(--font-serif);
+}
+
+
+
+.view-btn {
+    background-color: #a09a9963; 
+    background: linear-gradient(to top, #3e27238f, #a09a9963);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.inquries-btn {
+     background-color: #a09a9963; 
+     background: linear-gradient(to top, #3e272396, #a09a9963);
+     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+/* Inquire Badge */
+.hero-inquire-badge {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f6e6d1; /* The cream color from your logo */
+    width: 110px;
+    height: 110px;
+    border-radius: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 30;
+}
+
+.badge-icon {
+    width: 45px; 
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.hero-inquire-badge p {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #3e2723;
+    margin: 0;
+    line-height: 1.2;
+}
+
+
 .aboutus {
     height: 120vh;
     background: url('half.png') no-repeat center center/cover;
@@ -44,15 +160,16 @@ body {
 .main-title {
     font-size: 5.5rem;
     color: #3e2723; 
-    -webkit-text-stroke: 0.5px #a19a9a96;
+    -webkit-text-stroke: 0.8px #a19a9a96;
     letter-spacing: 8px;    
     line-height: 1;
+    
 }
 
 .sub-title {
     font-size: 4rem;
     color: #3e2723;
-    -webkit-text-stroke: 0.5px #a19a9a96;
+    -webkit-text-stroke: 0.8px #a19a9a96;
     font-style: PlayfairDisplay;
     font-weight: 500;
     margin-top: 5px;
@@ -115,21 +232,21 @@ body {
 .inquire-btn:hover {
     background-color: #5d4037; 
     transform: translateY(-5px); 
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     color: #f5f5f5;
 }
 
 /* --- Base Section Styling --- */
 .gallery-section {
-    background-color: #f5ebe0; /* Soft cream background */
+    background-color: #f5ebe0; 
     padding: 80px 20px;
     text-align: center;
 }
 
 .gallery-header h2 {
-    color: #3e2723; /* Dark wood color */
+    color: #3e2723; 
     font-size: 3rem;
-    font-family: 'Georgia', serif; /* Classic, premium font */
+    font-family: 'Georgia', serif;
     margin-bottom: 10px;
 }
 
@@ -142,11 +259,11 @@ body {
 
 
 .p2 {
-    color: #5d4037; /* Slightly lighter to show it's a sub-note */
+    color: #5d4037; 
     font-size: 1rem;
     font-family: 'Arial', sans-serif;
     font-style: italic;
-    margin-bottom: 60px; /* A LARGE gap to push the photo grid safely away */
+    margin-bottom: 60px; 
     line-height: 1.4;
 }
 
@@ -168,13 +285,13 @@ body {
     font-size: 2.2rem;
 }
 
-/* --- Individual Project Cards --- */
+
 .project-card {
     position: relative;
-    border-radius: 12px; /* Smooth rounded corners */
+    border-radius: 12px;
     overflow: hidden;
-    height: 450px; /* Fixed height for uniformity */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    height: 450px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
     cursor: pointer;
 }
 
@@ -182,27 +299,27 @@ body {
 .project-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures images fill the box without stretching */
-    transition: transform 0.5s ease; /* Smooth zoom transition */
+    object-fit: cover; 
+    transition: transform 0.5s ease; 
 }
 
-/* The Bottom Gradient Overlay */
+
 .card-gradient {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    /* Creates the dark fade from bottom to top */
+ 
     background: linear-gradient(to top, rgba(62, 39, 35, 0.95) 0%, rgba(62, 39, 35, 0.5) 60%, transparent 100%);
     color: #ffffff;
-    padding: 60px 20px 25px; /* Extra top padding for the gradient fade */
+    padding: 60px 20px 25px;
     box-sizing: border-box;
     text-align: center;
 }
 
 .card-gradient h3 {
     margin: 0 0 8px 0;
-    font-family: 'Georgia', serif;
+    font-family: 'nimbussansdot-ultrligh' light;
     font-size: 1.6rem;
     letter-spacing: 0.5px;
 }
@@ -211,25 +328,30 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
-    color: #e6dfd9; /* Off-white for subtitle */
+    color: #e6dfd9; 
 }
 
-/* Hover Effect - Zooms the image slightly */
+
 .project-card:hover img {
     transform: scale(1.06);
 }
 
-hr.brik {
-    width: 100%; /* Forces the line to stretch as far as its container allows */
-    border: none; /* Removes the ugly default 3D browser border */
-    border-top: 3px solid #3e2723; /* Uses your dark wood theme color */
-    opacity: 0.3; /* Makes it soft and subtle so it doesn't distract from photos */
-    
-    /* The Magic Spacing */
-    margin: 60px auto; /* 60px of breathing room on top and bottom, centered horizontally */
-}
+hr.ruler {
+margin: 10px auto;
 
 }
+
+hr.brik {
+    width: 100%; 
+    border: none; 
+    border-top: 3px solid #3e2723; 
+    opacity: 0.3; 
+    
+
+    margin: 60px auto; 
+}
+
+
 
 
 

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamagong WoodWorkz</title>
+    <title>Home | Kamagong WoodWorkz</title>
 
     <link rel="stylesheet" href="KamagongHome.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbarnew.css">
     <script src="navbar.js" defer></script>
   
@@ -18,17 +19,18 @@
         <nav class="nav-container">
             <div class="nav-links">
                 <a href="KamagongHome.html">Home</a>
-                <a href="KamagongAboutUs.html">About us</a>
+                <a href="#recent-projects">Gallery</a>
             </div>
             
             <div class="logo-wrapper">
-           
+               <a href="KamagongHome.html">
                 <img src="photos/KAMAGONG-LOGO.png" alt="KamagongWoodWorkzLogo" class="logo-img">
+                </a>
             </div>
 
             <div class="nav-links">
-                <a href="KamagongGallery.html">Gallery</a>
-                <a href="KamagongContacts.html">Contacts</a>
+                <a href="KamagongService.html">Service</a>
+                <a href="KamagongAboutUs.html">About Us</a>
             </div>
         </nav>
     </header>
@@ -41,11 +43,19 @@
                 <h2 class="sub-title">WoodWorkz</h2>
                 <hr>
                 <h3 class="custom">ANCHORED WITH PASSION, CRAFTED WITH DISCIPLINE.</h3>
-            </div>
-        </div>
+                <hr class="ruler">
+                <div class="hero-buttons">
+                        <a href="#recent-projects" class="hero-btn view-btn">View WoodWorkz Project</a>
+                        <button class="hero-btn inquries-btn">Inquire Now</button>
+                    </div>
+                </div>
+
+         </div>
+
     </section>
 
-  <section class="gallery-section">
+
+  <section id="recent-projects" class="gallery-section">
     <div class="gallery-header">
         <h2>Recent Projects</h2>
         <p class="p1">Custom craftsmanship from our workshop.</p>
@@ -104,7 +114,7 @@
                 <p></p>
             </div>
         </div>
-        </div>
+    </div>
 
 <hr class="brik">
 
@@ -172,7 +182,7 @@
    
 <hr class="brik">
 
-    <h3 class="category-title">To Full House Furnishing!</h3>
+    <h3 class="category-title">To Whole House Furnishing!</h3>
     <div class="project-grid">
         <div class="project-card">
             <img src="photos\antipolo rizal.jpg" alt="antipolohouse">
@@ -194,16 +204,40 @@
 
 
 
-    <section class="aboutus" id="about-section">
 
-
-        
+    <section class="cta-section">
+    <div class="cta-inner">
+        <p class="cta-accent">Your next journey awaits</p>
+        <h2 class="cta-heading">
+            Find your perfect trip,
+            <br>
+            <em>your way</em>
+        </h2>
+        <p class="cta-sub">
+            Whether custom-designed or curated, we create unforgettable experiences.
+        </p>
+        <div class="cta-buttons">
+            <a href="#packages" class="cta-btn cta-btn--primary">
+                <i class="fa-solid fa-paper-plane"></i>
+                Browse featured packages
+            </a>
+            <a href="contact.html?concern=custom" class="cta-btn cta-btn--secondary">
+                <i class="fa-solid fa-user-plus"></i>
+                Ask for a custom itinerary
+            </a>
+        </div>
+    </div>
     
+    <div class="cta-trust">
+        <p>Tailored experiences</p>
+        <p class="cta-trust-dot"></p>
+        <p>No hidden fees</p>
+        <p class="cta-trust-dot"></p>
+        <p>Personal travel support</p>
+    </div>
+</section>
 
-    </section>
-
-                <button class="inquire-btn" onclick="window.location.href='.html'">Inquire Now</button>
-           
+    <button class="inquire-btn" onclick="window.location.href='KamagongService.html'">I</button>
 
 
 </body>

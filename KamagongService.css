@@ -1,0 +1,7 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6e6d1; /* This is the line you're looking for */
+    font-family: 'Playfair Display', serif; /* Also fixed the syntax error here! */
+}
+

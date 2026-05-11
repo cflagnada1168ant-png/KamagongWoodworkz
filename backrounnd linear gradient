@@ -4,3 +4,5 @@
     transparent 60%,     
     #f2e9dacc 85%,      
     #f2e9dacc 100%      
+
+    background: linear-gradient(to right, #f2e3d5, #3e2723);
