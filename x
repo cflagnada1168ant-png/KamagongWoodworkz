@@ -9,7 +9,7 @@
     <script src="searchbar.js" defer></script>
 
     <!-- Home Page CSS -->
-    <link rel="stylesheet" href="KamagongMainHome.css">
+    <link rel="stylesheet" href="KamagongHome.css">
 
     <!--Search Bar CSS-->
     <link rel="stylesheet" href="searchbar.css">
@@ -25,29 +25,17 @@
 
     <!-- Navbar -->
     <nav class="navigation">
-        <a href="KamagongHome.html" class="logo-wrapper">
-    <img src="KAMAGONG-LOGO.png" alt="Kamagong Logo" class="nav-logo-img">
-    <span class="logo-text">Kamagong Woodworkz</span>
-        </a>
-
-        <
-
+        <a href="KamagongHome.html" class="logo">Kamagong Woodworkz</a>
         <div class="nav-links">
             <a href="KamagongHome.html">Home</a>
             <a href="KamagongAboutUs.html">About Us</a>
             <a href="KamagongGallery.html">Gallery</a>
-            <a href="KamagongContacts.html">Contacts</a>
+            <a href="contactpage.html">Contacts</a>
         </div>
-
-
         <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
             <i class="fa-solid fa-bars"></i>
         </button>
     </nav>
-
-    <span class="circle">
-
-    </span>
 
     <!-- Hero -->
     <div class="hero-section" id="section-1">
@@ -60,31 +48,18 @@
                 🔨 Professional Service
             </p>
         </div>
-  
+
         <div class="btn-hero">
             <a href="destinations.html" class="btn-1">
                 <i class="fa-regular fa-compass"></i>
                 Explore Now
             </a>
-            <a href="KamagongGallery.html" class="btn-2">Plan your journey</a>
+            <a href="contact.html" class="btn-2">Plan your journey</a>
         </div>
-
-
-
-
         <!--Search Bar-->
-        <div class="search-bar" role="search" aria-label="Gallery">
+        <div class="search-bar" role="search" aria-label="Destination search">
 
-            <section class="testimonials-slider" id="testimonials">
-        <div class="section-header">
-            <h3>What Travellers Say</h3>
-            <p class="section-subtitle">Real stories from real adventurers</p>
-        </div>
-
-        <div class="slider-container">
-            <button class="slider-btn slider-btn--prev" id="sliderPrev" aria-label="Previ">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
+           
 
 </body>
 

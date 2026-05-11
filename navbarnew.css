@@ -14,15 +14,15 @@
 
 .navbar {
   position: sticky;
-  top: 0; /* Sticks to the top edge */
-  z-index: 100; /* Keeps it above other content */
+  top: 0; 
+  z-index: 100; 
 
 }
 
 .navbar {
   position: sticky;
-  top: 0; /* Sticks to the top edge */
-  z-index: 100; /* Keeps it above other content */
+  top: 0; 
+  z-index: 100; 
 
 }
 
@@ -47,7 +47,15 @@
     font-weight: 700;
     font-size: 1.2rem;
     letter-spacing: 1px;
+    padding: 0.45rem 0.8rem;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
 }
+
+.nav-links a:hover {
+            background-color: #3e27231f;
+        }
+
 
 /* Floating Circular Logo */
 .logo-wrapper {

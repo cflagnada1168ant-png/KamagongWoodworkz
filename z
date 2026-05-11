@@ -12,15 +12,15 @@ html {
     background:
     linear-gradient(to left,
     #502d1e 0%,       
-    #502d1e80 2%,     
+    #502d1e83 2%,     
     transparent 40%,    
     transparent 60%,     
-    #502d1e80 98%,       
+    #502d1e8c 98%,       
     #502d1e 100%     
     ),
-}
 
-    url("") center/cover no-repeat;
+
+    url("Kamagong-backround.png") center/cover no-repeat;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -939,35 +939,3 @@ html, body {
     overflow-x: hidden; 
     position: relative;
 }
-
-
-/* Container for both Image and Text */
-.logo-wrapper {
-    display: flex;
-    align-items: center; /* Vertically centers the logo with the text */
-    gap: 12px;           /* Space between the logo and the text */
-    text-decoration: none;
-    transition: transform 0.25s ease;
-}
-
-/* The actual Logo Image */
-.nav-logo-img {
-    height: 45px;       /* Adjust this to fit your nav-height */
-    width: auto;        /* Maintains aspect ratio */
-    object-fit: contain;
-}
-
-/* The "Kamagong Woodworkz" text */
-.logo-text {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.1rem, 2.2vw, 1.7rem);
-    font-weight: bold;
-    color: #502d1e;
-    white-space: nowrap;
-}
-
-/* Hover effect on the whole group */
-.logo-wrapper:hover {
-    transform: scale(1.02);
-}
-
