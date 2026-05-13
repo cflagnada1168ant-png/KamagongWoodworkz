@@ -1,42 +1,83 @@
-/* Basic Reset */
-:root 
-
+/* --- Cinzel --- */
 @font-face {
-    font-family: PlayfairDisplay; regular;
-    src: url('Font\PlayfairDisplay-Regular.ttf') format('truetype');
+    font-family: 'Cinzel';
+    src: url('Font/Cinzel.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
+/* --- Playfair Display --- */
 @font-face {
-    font-family: PlayfairDisplay; semi-bold;
-    src: url('Font\PlayfairDisplay-SemiBold.ttf') format('truetype');
-    font-weight: 600;
+    font-family: 'PlayfairDisplay';
+    src: url('Font/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: nimbus san l; light;
-    src: url('Font\nimbussansdot-ultrligh.otf') format('opentype');
-    font-weight: 400;
+    font-family: 'PlayfairDisplay';
+    src: url('Font/PlayfairDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* Semi-bold */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- FreeSans --- */
+@font-face {
+    font-family: 'FreeSans';
+    src: url('Font/FreeSans.otf') format('opentype');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: Freesans; oblique;
-    src: url('Font\FreeSansOblique.otf') format('opentype');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: Freesans; bold;
-    src: url('Font\FreeSansBold.otf') format('opentype');
+    font-family: 'FreeSans';
+    src: url('Font/FreeSansBold.otf') format('opentype');
     font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FreeSans';
+    src: url('Font/FreeSansOblique.otf') format('opentype');
+    font-weight: 400;
+    font-style: oblique; /* Or italic */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FreeSans';
+    src: url('Font/FreeSansBoldOblique.otf') format('opentype');
+    font-weight: 800;
+    font-style: oblique;
+    font-display: swap;
+}
+
+/* --- Nimbus San L --- */
+@font-face {
+    font-family: 'Nimbus San L';
+    src: url('Font/NimbusSanL-Reg.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nimbus San L';
+    src: url('Font/NimbusSanL-Bol.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nimbus San L';
+    src: url('Font/nimbussansdot-ultrligh.otf') format('opentype');
+    font-weight: 300; /* Light is usually 300 */
     font-style: normal;
     font-display: swap;
 }
@@ -238,7 +279,7 @@ body {
 
 /* --- Base Section Styling --- */
 .gallery-section {
-    background-color: #f5ebe0; 
+    background-color: #ffffff; 
     padding: 80px 20px;
     text-align: center;
 }

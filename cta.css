@@ -1,0 +1,212 @@
+/* --- Cinzel --- */
+@font-face {
+    font-family: 'Cinzel';
+    src: url('Font/Cinzel.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Playfair Display --- */
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('Font/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('Font/PlayfairDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* Semi-bold */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- FreeSans --- */
+@font-face {
+    font-family: 'FreeSans';
+    src: url('Font/FreeSans.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FreeSans';
+    src: url('Font/FreeSansBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FreeSans';
+    src: url('Font/FreeSansOblique.otf') format('opentype');
+    font-weight: 400;
+    font-style: oblique; /* Or italic */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FreeSans';
+    src: url('Font/FreeSansBoldOblique.otf') format('opentype');
+    font-weight: 800;
+    font-style: oblique;
+    font-display: swap;
+}
+
+/* --- Nimbus San L --- */
+@font-face {
+    font-family: 'Nimbus San L';
+    src: url('Font/NimbusSanL-Reg.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nimbus San L';
+    src: url('Font/NimbusSanL-Bol.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nimbus San L';
+    src: url('Font/nimbussansdot-ultrligh.otf') format('opentype');
+    font-weight: 300; /* Light is usually 300 */
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.cta-section {
+    min-height: 100%;
+    width: 100%;
+    padding: 120px 6vw;
+    background: url('photos/cta-backround.png') no-repeat center center/cover;
+    display: flex;
+    border: 2px solid #000000;
+    justify-content: center;
+    box-shadow: 0 5px 35px #3e2723;
+    align-items: center;
+    position: relative; 
+    z-index: 10;
+    flex-direction: column;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.cta-inner {
+
+    background-color: #ffffff1e;
+    backdrop-filter: blur(2px);
+    border: 1px solid #000000;
+    padding: 40px 80px;
+    text-align: center;
+
+}
+
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #241a189f, #f2e3d51c);
+}
+
+
+.cta-inner {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.cta-accent {
+    font-family: freesans;
+    font-style: oblique;          
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.6rem; 
+}
+
+.cta-heading {
+    font-family: PlayfairDisplay, serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.15;
+    margin: 0 0 1rem;
+
+}
+
+.cta-sub {
+    font-family: Montserrat, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    margin: 0 0 2.4rem;
+}
+
+
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.cta-btn--primary {
+    background: #e8ab18;
+    color: #1a1200;
+    box-shadow: 0 4px 24px rgba(240, 177, 61, 0.45);
+
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 32px;
+    border-radius: 50px;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all var(--trans);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.cta-btn--secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+
+}
+
+.cta-trust {
+    position: relative;
+    margin-top: 2.8rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+}
