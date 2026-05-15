@@ -1,79 +1,24 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const toggle   = document.querySelector('.navigation .menu-toggle');
-  const navLinks = document.querySelector('.navigation .nav-links');
-  const icon     = toggle ? toggle.querySelector('i') : null;
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById("mobile-menu");
+    const navLinks = document.getElementById("nav-links");
 
-  if (!toggle || !navLinks) {
-    console.warn('Navbar: .menu-toggle or .nav-links not found.');
-    return;
-  }
+    if (menuToggle && navLinks) {
+        
+        // Single unified click event
+        menuToggle.addEventListener("click", function() {
+            menuToggle.classList.toggle("open");   // Morph hamburger lines to X
+            navLinks.classList.toggle("active");   // Slides dropdown open/closed
+        });
 
-  /*Open/Close helpers*/
-  function openMenu() {
-    navLinks.classList.add('active');
-    toggle.classList.add('open');
-    toggle.setAttribute('aria-expanded', 'true');
-    if (icon) {
-      icon.classList.replace('fa-bars', 'fa-xmark');
+        // Close dropdown when a navigation link inside is clicked
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                menuToggle.classList.remove("open");
+                navLinks.classList.remove("active");
+            });
+        });
+        
+    } else {
+        console.error("Navigation error: Essential elements were missing from DOM.");
     }
-  }
-
-  function closeMenu() {
-    navLinks.classList.remove('active');
-    toggle.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-    if (icon) {
-      icon.classList.replace('fa-xmark', 'fa-bars');
-    }
-  }
-
-  function toggleMenu() {
-    navLinks.classList.contains('active') ? closeMenu() : openMenu();
-  }
-
-  /*Toggle on hamburger click*/
-  toggle.addEventListener('click', toggleMenu);
-
-  /*Keyboard: Enter/Space*/
-  toggle.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      toggleMenu();
-    }
-  });
-
-  /*Close when a nav link is clicked*/
-  navLinks.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', closeMenu);
-  });
-
-  /*Close when clicking outside the nav*/
-  document.addEventListener('click', function (e) {
-    if (!toggle.contains(e.target) && !navLinks.contains(e.target)) {
-      closeMenu();
-    }
-  });
-
-  /*Close on Escape key*/
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeMenu();
-  });
-
-  /*Reset on resize back to desktop*/
-  window.addEventListener('resize', function () {
-    if (window.innerWidth > 900) closeMenu();
-  });
-});
-
-
-window.addEventListener('scroll', function() {
-  const nav = document.getElementById('main-nav');
-  
-  // If scrolled down more than 50px, add the class
-  if (window.scrollY > 50) {
-    nav.classList.add('scrolled');
-  } else {
-    // If at the top, remove the class
-    nav.classList.remove('scrolled');
-  }
 });

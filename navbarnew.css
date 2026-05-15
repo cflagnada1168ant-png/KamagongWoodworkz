@@ -1,21 +1,16 @@
-/* Navigation Bar */
+/* --- Navigation Bar Base --- */
 .navbar {
-    background-color: #ffffff; /* Light cream/beige from image_bb0439.jpg */
+    background-color: #ffffff; 
     height: 80px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: sticky;
+    top: 0; 
     border-bottom: 1px solid #080808;
-    z-index: 100;
+    z-index: 1000;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.navbar {
-  position: sticky;
-  top: 0; 
-  z-index: 100; 
-
+    overflow: visible !important;
 }
 
 .nav-container {
@@ -24,15 +19,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    position: relative;
 }
 
+/* Desktop Links */
 .nav-links {
     display: flex;
     gap: 100px;
     flex: 1;
     justify-content: center;
-    
 }
 
 .nav-links a {
@@ -42,37 +37,270 @@
     font-size: 1.2rem;
     letter-spacing: 1px;
     padding: 0.45rem 0.8rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     border-radius: 8px;
-    
 }
 
 .nav-links a:hover {
-            background-color: #3e27231f;
-            box-shadow: 0 3px 5px #3e272338;
-            transform: translateY(-3px); css
-            
-        } 
-
+    background-color: #3e27231f;
+    box-shadow: 0 3px 5px #3e272338;
+    transform: translateY(-3px);
+} 
 
 /* Floating Circular Logo */
 .logo-wrapper {
     background-color: #f2e3d5;
-    width: 250px;
-    height: 250px;
+    width: 215px;
+    height: 215px;
     border-radius: 50%;
-    border: 2px solid #3e2723;
+    border: 1px solid #3e2723;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 85px;
+    top: 70px;
     transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1001;
 }
 
 .logo-img {
-    width: 500px;
+    width: 150px; /* Adjusted to fit nicely inside the circle */
     height: auto;
     transition: all 0.5s ease;
+}
+
+/* Hamburger Icon Base */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1015;
+    background: transparent; 
+    border: none;          
+    outline: none;         
+    padding: 5px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #3e2723;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px; 
+}
+
+/* ==========================================================================
+   DESKTOP STYLES (Default View)
+   ========================================================================== */
+.navbar {
+    background-color: #ffffff; 
+    height: 80px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0; 
+    border-bottom: 1px solid #080808;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Single links container acting as a desktop split layout via 'order' */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Layout ordering magic to push links around the centered logo wrapper */
+.link-home    { order: 1; }
+.link-gallery { order: 2; margin-right: 150px; } /* Pushes left links away from center */
+.link-service { order: 4; margin-left: 150px;  } /* Pushes right links away from center */
+.link-about   { order: 5; }
+
+/* Desktop Navigation Typography */
+.nav-links a {
+    text-decoration: none;
+    color: #3e2723;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 0.45rem 0.8rem;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.nav-links a:hover {
+    background-color: #3e27231f;
+    box-shadow: 0 3px 5px #3e272338;
+    transform: translateY(-3px);
+} 
+
+/* Centered Desktop Floating Circle Logo */
+.logo-wrapper {
+    order: 3; /* Placed exactly in the middle of the order chain */
+    background-color: #f2e3d5;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #3e2723;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px; /* Floats over the header bar line */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    z-index: 1001;
+}
+
+.logo-img {
+    width: 300px;
+    height: auto;
+}
+
+/* Hidden Mobile Toggle Element on Desktop */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1002;
+    background: none;
+    border: none;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #3e2723;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+
+/* ==========================================================================
+   MOBILE & TABLET STYLES (Dropdown Menu View)
+   ========================================================================== */
+@media (max-width: 992px) {
+  
+
+
+  
+    .menu-toggle {
+        z-index: 1000;
+        display: flex;
+    }
+
+    /* Morphing Hamburger icon animations into an 'X' symbol */
+    .menu-toggle.open .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    .menu-toggle.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.open .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* 2. MAKE LOGO BIGGER & CENTERED */
+    .logo-wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;      /* Floats it nicely above the header line */
+        width: 125px;    /* INCREASED from 95px */
+        height: 125px;   /* INCREASED from 95px */
+        z-index: 1005;   /* Ensures it stays strictly ON TOP of the dropdown */
+    }
+
+    .logo-img {
+        width: 250px;     /* INCREASED to match new wrapper size */
+    }
+
+    /* 3. The Professional Slide-Down Dropdown Menu Container */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0px;
+        
+        position: absolute;
+        top: 70px; 
+        left: 0;
+        width: 100%;
+        height: 0; 
+        overflow: hidden; 
+        
+        background-color: #ffffff;
+        /* Softer, more elegant shadow for the dropdown */
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08); 
+        transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        z-index: 999;
+    }
+
+    .nav-container {
+        width: 100%;
+        padding: 0 15px;
+        justify-content: space-between;
+        position: static !important;
+        
+
+    }
+
+    /* Cancel desktop order system on mobile screens */
+    .link-home, .link-gallery, .link-service, .link-about {
+        order: initial;
+        margin: 0;
+    }
+
+
+
+    .nav-links.active {
+       
+        height: 350px; 
+        
+        
+        padding-top: 80px; 
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Touch-Friendly Mobile Link Items */
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 1.3rem;
+        font-weight: 700;
+        border-radius: 5%;
+        transition: background-color 0.5s ease;
+        border-bottom: 1px solid #1d19182c;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a:hover {
+        background-color: #3e27230a;
+        transform: none;
+        box-shadow: none;
+    }
 }

@@ -1,0 +1,230 @@
+/* --- Master Footer Styles --- */
+.main-footer {
+    background-color: #140e0c;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    padding: 80px 6vw 20px 6vw;
+    border-top: 2px solid #000000;
+    position: relative;
+    z-index: 20;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 60px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+
+.footer-brand {
+    flex: 1.5; 
+}
+
+.footer-logo {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 0; 
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.5px;
+    line-height: 1;
+}
+
+
+.brand-tagline {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.footer-col h4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #e8ab18;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    margin-top: -6px;
+}
+
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.footer-links li {
+    margin-bottom: 0.4rem; 
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    padding-left: 6px; 
+}
+
+
+.footer-contact-box {
+    flex: 1.8; 
+    min-width: 320px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+
+.grid-social-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.grid-social-link:hover {
+    transform: translateY(-2px);
+}
+
+.grid-icon {
+    font-size: 1.1rem;
+    width: 20px;
+    height: 20px;
+    color: #e8ab18;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+.grid-icon svg {
+    width: 100%;
+    height: 100%;
+
+}
+
+.grid-text h5 {
+    margin: 0 0 2px 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.grid-text p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.grid-social-link:hover .grid-text h5 {
+    color: #e8ab18; 
+}
+
+
+.footer-bottom {
+    margin-top: 100px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* --- MOBILE & TABLET FOOTER OVERRIDES (UPDATED) --- */
+@media (max-width: 992px) {
+    /* 1. Center the main container */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    /* 2. Force every column (Brand, Links, Contact) to flex to the center */
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* 3. Strip default left-padding from the Explore links list */
+    .footer-links ul {
+        padding-left: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-links li {
+        text-align: center;
+        margin-bottom: 15px; /* Give links a little breathing room to tap */
+    }
+
+    /* 4. Ensure headings center correctly */
+    .footer-col h4, 
+    .footer-logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* 5. Center the Contact Grid */
+    .contact-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .grid-item, .grid-social-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 8px;
+    }
+}

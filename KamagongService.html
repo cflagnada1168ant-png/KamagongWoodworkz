@@ -5,38 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service | Kamagong WoodWorkz</title>
 
-    <link rel="stylesheet" href="Kamagong.css">
+    <link rel="stylesheet" href="KamagongService.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbarnew.css">  
+    <link rel="stylesheet" href="cta.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="navbarnew.css">
     <script src="navbar.js" defer></script>
-
 </head>
 
 <body>
 
      <header id="nav-bar" class="navbar">
-        <nav class="nav-container">
-            <div class="nav-links">
-                <a href="KamagongHome.html">Home</a>
-                <a href="#recent-projects">Gallery</a>
-            </div>
-            
-             <div class="logo-wrapper">
-               <a href="KamagongHome.html">
+    <nav class="nav-container">
+        <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="logo-wrapper">
+           <a href="index.html">
                 <img src="photos/KAMAGONG-LOGO.png" alt="KamagongWoodWorkzLogo" class="logo-img">
-                </a>
+            </a>
+        </div>
+
+        <div class="nav-links" id="nav-links">
+            <a href="index.html" class="link-home">Home</a>
+            <a href="index.html#recent-projects" class="link-gallery">Gallery</a>
+            <a href="KamagongService.html" class="link-service">Service</a>
+            <a href="KamagongAboutUs.html" class="link-about">About Us</a>
+        </div>
+    </nav>
+</header>
+
+
+
+<section class="services-section">
+  <div class="services-container">
+    
+    <div class="services-header">
+      <h2>Our Services</h2>
+      <p>From concept to creation, we bring your vision to life with precision craftsmanship.</p>
+    </div>
+
+    <div class="services-grid">
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-hammer"></i> 
+        </div>
+        <h3>Specialized Custom Furniture</h3>
+        <p>Every space has a story. We design and handcraft one-of-a-kind, premium wooden furniture tailored strictly to your aesthetic preferences and functional needs.</p>
+      </div>
+
+      <div class="service-card highlighted-card">
+        <div class="service-icon">
+          <i class="fas fa-compass"></i>
+        </div>
+        <h3>Ocular Visits & Consultation</h3>
+        <p>We don’t just build; we plan. Our team conducts detailed on-site ocular visits and personal interviews to understand your space, lighting, and exact requirements before cutting a single piece of wood.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-th-large"></i>
+        </div>
+        <h3>Modular Furniture Systems</h3>
+        <p>Maximize your space with smart, flexible, and highly functional modular designs. Perfect for modern homes and offices requiring seamless, scalable storage solutions.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col footer-brand">
+                <h3 class="footer-logo">Kamagong Woodworkz</h3>
+                <p class="brand-tagline">Anchored with Passion, Crafted with Discipline. Direct manufacturer of premium custom furniture, kitchen cabinets, and modern woodwork in Marikina City.</p>
             </div>
-
-            <div class="nav-links">
-                <a href="KamagongService.html">Service</a>
-                <a href="KamagongAboutUs.html">About Us</a>
+            <div class="footer-col footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#packages">Featured Work</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="contact.html">Request a Quote</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
-
-
-
-
+            <div class="footer-col footer-contact-box">
+                <h4>Get In Touch</h4>
+                <div class="contact-grid">
+                    <div class="grid-item">
+                        <div class="grid-icon">📍</div>
+                        <div class="grid-text">
+                            <h5>Our Workshop</h5>
+                            <p>Marikina City, Philippines</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://facebook.com" target="_blank" class="grid-social-link">
+                            <div class="grid-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+                            </div>
+                            <div class="grid-text">
+                                <h5>Facebook</h5>
+                                <p>@KamagongWoodworkz</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <div class="grid-icon">📞</div>
+                        <div class="grid-text">
+                            <h5>Call / Viber</h5>
+                            <p>+63 912 345 6789</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://instagram.com" target="_blank" class="grid-social-link">
+                            <div class="grid-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </div>
+                            <div class="grid-text">
+                                <h5>Instagram</h5>
+                                <p>@kamagong.woodworkz</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kamagong Woodworkz. All Rights Reserved. Crafted with Passion.</p>
+        </div>
+    </footer>
 
 
 

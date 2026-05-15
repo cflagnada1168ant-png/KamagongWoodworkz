@@ -7,237 +7,264 @@
 
     <link rel="stylesheet" href="KamagongHome.css">
     <link rel="stylesheet" href="cta.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbarnew.css">
     <script src="navbar.js" defer></script>
-  
 </head>
-        
 <body>
 
-   
     <header id="nav-bar" class="navbar">
-        <nav class="nav-container">
-            <div class="nav-links">
-                <a href="KamagongHome.html">Home</a>
-                <a href="#recent-projects">Gallery</a>
-            </div>
-            
-            <div class="logo-wrapper">
-               <a href="KamagongHome.html">
+    <nav class="nav-container">
+        <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="logo-wrapper">
+           <a href="index.html">
                 <img src="photos/KAMAGONG-LOGO.png" alt="KamagongWoodWorkzLogo" class="logo-img">
-                </a>
-            </div>
+            </a>
+        </div>
 
-            <div class="nav-links">
-                <a href="KamagongService.html">Service</a>
-                <a href="KamagongAboutUs.html">About Us</a>
-            </div>
-        </nav>
-    </header>
-
+        <div class="nav-links" id="nav-links">
+            <a href="index.html" class="link-home">Home</a>
+            <a href="#recent-projects" class="link-gallery">Gallery</a>
+            <a href="KamagongService.html" class="link-service">Service</a>
+            <a href="KamagongAboutUs.html" class="link-about">About Us</a>
+        </div>
+    </nav>
+</header>
 
     <section class="hero">
         <div class="hero-overlay">
             <div class="branding-box">
                 <h1 class="main-title">KAMAGONG</h1>
                 <h2 class="sub-title">WoodWorkz</h2>
-                <hr>
+                <hr class="ruler">
                 <h3 class="custom">ANCHORED WITH PASSION, CRAFTED WITH DISCIPLINE.</h3>
                 <hr class="ruler">
                 <div class="hero-buttons">
-                        <a href="#recent-projects" class="hero-btn view-btn">View WoodWorkz Project</a>
-                        <button class="hero-btn inquries-btn">Inquire Now</button>
-                    </div>
+                    <a href="#recent-projects" class="hero-btn view-btn">Browse Our Projects</a>
+                    <button class="hero-btn inquries-btn">Get in Touch Today</button>
                 </div>
-
-         </div>
-
+            </div>
+        </div>
     </section>
 
+    <section id="recent-projects" class="gallery-section">
+        <div class="gallery-header">
+            <h2>Recent Projects</h2>
+            <p class="p1">Custom craftsmanship from our workshop.</p>
+            <p class="p2">From Houses, Local Business, Condominiums to a Full Custom House Furnishing.</p>
+        </div>
 
-  <section id="recent-projects" class="gallery-section">
-    <div class="gallery-header">
-        <h2>Recent Projects</h2>
-        <p class="p1">Custom craftsmanship from our workshop.</p>
-        <p class="p2">From Houses, Local Business, Condominiums to a Full Custom House Furnishing.</p>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="photos/Modular Kitchen.png" alt="modern modular kitchen">
+                <div class="card-gradient">
+                    <h3>Kitchen Cabinets</h3>
+                    <p>Narra Wood & White Finish</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="photos/Fameresidencescondominium.jpg" alt="modular cabinets">
+                <div class="card-gradient">
+                    <h3>Living Room Cabinets</h3>
+                    <p>Natural Edge Kamagong</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="photos/kiosk.png" alt="collapsible carts">
+                <div class="card-gradient">
+                    <h3>Collapsible Carts</h3>
+                    <p>Commercial kiosk</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="photos/breakfast nook table.jpg" alt="nook table">
+                <div class="card-gradient">
+                    <h3>Nook Table</h3>
+                    <p>Compact breakfast bar with solid wood top</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="photos/custom bedframe.jpg" alt="Bed Frame">
+                <div class="card-gradient">
+                    <h3>Bed Frame</h3>
+                    <p>Custom king-size frame with built-in drawers</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="photos/friend loft bed.jpg" alt="loft bed">
+                <div class="card-gradient">
+                    <h3>Loft Bed</h3>
+                    <p>Space-maximizing wooden loft structure</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="brik">
+        <h3 class="category-title">From Local Houses</h3> 
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="photos/tangerine mar.jpg" alt="Residential Kitchen">
+                <div class="card-gradient">
+                    <h3>Classic Hardwood Kitchen</h3>
+                    <p>Custom cabinetry for a residence</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="photos/friend loft bed.jpg" alt="loft bed">
+                <div class="card-gradient">
+                    <h3>Solid Narra Loft bed</h3>
+                    <p>Heavy-duty hardwood frame built to last</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="brik">
+        <h3 class="category-title">Local Businesses</h3>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="photos/marikina care clinic.jpg" alt="clinic">
+                <div class="card-gradient">
+                    <h3>Marikina Care Clinic</h3>
+                    <p>Custom reception desk and clinic cabinetry</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="photos/breakfast nook table.jpg" alt="Cafe Tables">
+                <div class="card-gradient">
+                    <h3>Coffee Shop Fit-out</h3>
+                    <p>Durable dining tables and counter cladding</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="brik">
+        <h3 class="category-title">Condominium Spaces</h3>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="photos/greenheight marikina.jpg" alt="Built-in Wardrobe">
+                <div class="card-gradient">
+                    <h3>Space-Saving Wardrobe</h3>
+                    <p>Floor-to-ceiling modular storage</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="photos/MAKATI.jpg" alt="TV Console">
+                <div class="card-gradient">
+                    <h3>Floating Entertainment Unit</h3>
+                    <p>Minimalist design for compact living</p>
+                </div>
+            </div>
+        </div>
        
-    </div>
-
-    <div class="project-grid">
-
-        <div class="project-card">
-            <img src="photos/Modular Kitchen.png" alt="modern modular kitchen">
-            <div class="card-gradient">
-                <h3>Kitchen Cabinets</h3>
-                <p>Narra Wood & White Finish</p>
+        <hr class="brik">
+        <h3 class="category-title">To Whole House Furnishing!</h3>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="photos/antipolo rizal.jpg" alt="antipolohouse">
+                <div class="card-gradient">
+                    <h3>The Antipolo Project</h3>
+                    <p>Matching living, dining, and bedroom suites</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="photos/satori residences.jpg" alt="Custom Full Furniture">
+                <div class="card-gradient">
+                    <h3>Custom Full Furniture</h3>
+                    <p>Complete interior woodwork coordination</p>
+                </div>
             </div>
         </div>
-
-
-        <div class="project-card">
-            <img src="photos/Fameresidencescondominium.jpg" alt="modular cabinets">
-            <div class="card-gradient">
-                <h3>Living Room Cabinets</h3>
-                <p>Natural Edge Kamagong</p>
+    </section>
+        
+    <section class="cta-section">
+        <div class="cta-inner">
+            <h2 class="cta-heading">Kamagong Woodworkz</h2>
+            <p class="cta-sub">Custom Woodworkz in Marikina City</p>
+            <div class="cta-buttons">
+                <a href="KamagongService.html" class="cta-btn cta-btn--primary">Inquire Now</a>
+                <a href="KamagongAboutUs.html" class="cta-btn cta-btn--secondary">Learn More</a>
             </div>
         </div>
+        <div class="cta-trust">
+            <p>Crafted with Passion, Built with Purpose</p>
+            <p class="cta-trust-dot"></p>
+            <p>Direct Manufacturer</p>
+            <p class="cta-trust-dot"></p>
+            <p>Premium & Quality Materials</p>
+            <p class="cta-trust-dot"></p>
+            <p>Professional Service</p>
+        </div>
+    </section>
 
-
-        <div class="project-card">
-            <img src="photos/kiosk.png" alt="collapsible carts">
-            <div class="card-gradient">
-                <h3>Collapsible Carts</h3>
-                <p>Commersial kiosk</p>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col footer-brand">
+                <h3 class="footer-logo">Kamagong Woodworkz</h3>
+                <p class="brand-tagline">Anchored with Passion, Crafted with Discipline. Direct manufacturer of premium custom furniture, kitchen cabinets, and modern woodwork in Marikina City.</p>
+            </div>
+            <div class="footer-col footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#recent-projects">Featured Work</a></li>
+                    <li><a href="Kamagongservice.html#services">Services</a></li>
+                    <li><a href="KamagongAboutUs.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact-box">
+                <h4>Get In Touch</h4>
+                <div class="contact-grid">
+                    <div class="grid-item">
+                        <div class="grid-icon">📍</div>
+                        <div class="grid-text">
+                            <h5>Our Workshop</h5>
+                            <p>Marikina City, Philippines</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://www.facebook.com/profile.php?id=61550916584171" target="_blank" class="grid-social-link">
+                            <div class="grid-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+                            </div>
+                            <div class="grid-text">
+                                <h5>Facebook</h5>
+                                <p>@KamagongWoodworkz</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <div class="grid-icon">📞</div>
+                        <div class="grid-text">
+                            <h5>Call / Viber</h5>
+                            <p>+63 912 345 6789</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://www.instagram.com/kamagongwoodworkz/" target="_blank" class="grid-social-link">
+                            <div class="grid-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </div>
+                            <div class="grid-text">
+                                <h5>Instagram</h5>
+                                <p>@kamagong.woodworkz</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-
-    <div class="project-card">
-            <img src="photos\breakfast nook table.jpg" alt="nook table">
-            <div class="card-gradient">
-                <h3>Nook Table</h3>
-                <p></p>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kamagong Woodworkz. All Rights Reserved. Crafted with Passion.</p>
         </div>
+    </footer>
 
-    <div class="project-card">
-            <img src="photos\custom bedframe.jpg" alt="Bed Frame">
-            <div class="card-gradient">
-                <h3>Bed Frame</h3>
-                <p></p>
-            </div>
-        </div>
-    
-    <div  class="project-card">
-            <img src="photos\friend loft bed.jpg" alt="loft bed">
-            <div class="card-gradient">
-                <h3>Loft Bed</h3>
-                <p></p>
-            </div>
-        </div>
-    </div>
-
-<hr class="brik">
-
-      <h3 class="category-title">From Local Houses</h3> 
-    <div class="project-grid">
-        <div class="project-card">
-            <img src="photos\tangerine mar.jpg" alt="Residential Kitchen">
-            <div class="card-gradient">
-                <h3>Classic Hardwood Kitchen</h3>
-                <p>Custom cabinetry for a residence</p>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="photos\friend loft bed.jpg" alt="loft bed">
-            <div class="card-gradient">
-                <h3>Solid Narra Loft bed</h3>
-                <p></p>
-            </div>
-        </div>
-    </div>
-
-<hr class="brik">
-
-    <h3 class="category-title">Local Businesses</h3>
-
-
-    <div class="project-grid">
-        <div class="project-card">
-            <img src="photos\marikina care clinic.jpg" alt="clinic">
-            <div class="card-gradient">
-                <h3>Marikina Care Clinic</h3>
-                <p></p>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="photos\breakfast nook table.jpg" alt="Cafe Tables">
-            <div class="card-gradient">
-                <h3>Coffee Shop Fit-out</h3>
-                <p>Durable dining tables and counter cladding</p>
-            </div>
-        </div>
-    </div>
-
- <hr class="brik">
-
-    <h3 class="category-title">Condominium Spaces</h3>
-
-
-    <div class="project-grid">
-        <div class="project-card">
-            <img src="photos\greenheight marikina.jpg" alt="Built-in Wardrobe">
-            <div class="card-gradient">
-                <h3>Space-Saving Wardrobe</h3>
-                <p>Floor-to-ceiling modular storage</p>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="photos\MAKATI.jpg" alt="TV Console">
-            <div class="card-gradient">
-                <h3>Floating Entertainment Unit</h3>
-                <p>Minimalist design for compact living</p>
-            </div>
-        </div>
-    </div>
-   
-<hr class="brik">
-
-    <h3 class="category-title">To Whole House Furnishing!</h3>
-    <div class="project-grid">
-        <div class="project-card">
-            <img src="photos\antipolo rizal.jpg" alt="antipolohouse">
-            <div class="card-gradient">
-                <h3>The Antipolo Project</h3>
-                <p>Matching living, dining, and bedroom suites</p>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="photos\satori residences.jpg" alt="Custom Full Furniture">
-            <div class="card-gradient">
-                <h3>Custom Full Furniture</h3>
-                <p>Complete interior woodwork coordination</p>
-            </div>
-        </div>
-    </div>
-
-</section>
-    
-<section class="cta-section">
-    <div class="cta-inner">
-        <p class="cta-accent">Custom Woodworkz <br> in Marikina City</p></p>
-
-        <h2 class="cta-heading">
-       Kamagopng Woodworkz,<br><em></em>
-        </h2>
-
-        <p class="cta-sub">
-            custom-designed or curated,
-        </p>
-
-        <div class="cta-buttons">
-        <a href="#packages" class="cta-btn cta-btn--primary">
-            <i class="fa-solid fa-paper-plane"></i>Browse featured making
-        </a>
-        <a href="contact.html?concern=custom" class="cta-btn cta-btn--secondary">
-            <i class="fa-solid fa-user-plus"></i> Ask for a custom request
-        </a>
-        </div>
-    </div>
-
-    <div class="cta-trust">
-        <p>T</p>
-        <p class="cta-trust-dot"></p>
-        <p>Ns</p>
-        <p class="cta-trust-dot"></p>
-        <p>Pert</p>
-    </div>
-</section>
-
-
-
-    <button class="inquire-btn" onclick="window.location.href='KamagongService.html'">I</button>
-
+    <button class="inquire-btn" onclick="window.location.href='KamagongService.html'">📩</button>
 
 </body>
 </html>

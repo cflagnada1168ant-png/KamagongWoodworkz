@@ -1,212 +1,228 @@
-/* --- Cinzel --- */
-@font-face {
-    font-family: 'Cinzel';
-    src: url('Font/Cinzel.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* --- Playfair Display --- */
-@font-face {
-    font-family: 'PlayfairDisplay';
-    src: url('Font/PlayfairDisplay-Regular.ttf') format('truetype');
-    font-weight: 400; /* Regular */
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'PlayfairDisplay';
-    src: url('Font/PlayfairDisplay-SemiBold.ttf') format('truetype');
-    font-weight: 600; /* Semi-bold */
-    font-style: normal;
-    font-display: swap;
-}
-
-/* --- FreeSans --- */
-@font-face {
-    font-family: 'FreeSans';
-    src: url('Font/FreeSans.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'FreeSans';
-    src: url('Font/FreeSansBold.otf') format('opentype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'FreeSans';
-    src: url('Font/FreeSansOblique.otf') format('opentype');
-    font-weight: 400;
-    font-style: oblique; /* Or italic */
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'FreeSans';
-    src: url('Font/FreeSansBoldOblique.otf') format('opentype');
-    font-weight: 800;
-    font-style: oblique;
-    font-display: swap;
-}
-
-/* --- Nimbus San L --- */
-@font-face {
-    font-family: 'Nimbus San L';
-    src: url('Font/NimbusSanL-Reg.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nimbus San L';
-    src: url('Font/NimbusSanL-Bol.otf') format('opentype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nimbus San L';
-    src: url('Font/nimbussansdot-ultrligh.otf') format('opentype');
-    font-weight: 300; /* Light is usually 300 */
-    font-style: normal;
-    font-display: swap;
-}
-
-
 .cta-section {
-    min-height: 100%;
+    min-height: 80vh; 
     width: 100%;
     padding: 120px 6vw;
     background: url('photos/cta-backround.png') no-repeat center center/cover;
     display: flex;
-    border: 2px solid #000000;
     justify-content: center;
-    box-shadow: 0 5px 35px #3e2723;
     align-items: center;
     position: relative; 
     z-index: 10;
     flex-direction: column;
-    background-size: cover;
     overflow: hidden;
-    
+    box-shadow: 0 25px 100px #000000;
 }
 
-.cta-inner {
+.cta-section {
 
-    background-color: #ffffff1e;
-    backdrop-filter: blur(2px);
-    border: 1px solid #000000;
-    padding: 40px 80px;
-    text-align: center;
-
+    padding: 120px 6vw 50px 6vw;
 }
-
 
 .cta-section::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, #241a189f, #f2e3d51c);
+    background: radial-gradient(circle, rgba(24, 16, 14, 0.75) 0%, rgba(15, 10, 9, 0.5) 100%);
+    z-index: 1;
 }
 
 
 .cta-inner {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 60px 80px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-
-.cta-accent {
-    font-family: freesans;
-    font-style: oblique;          
-    font-weight: 400;
-    color: #ffffff;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.6rem; 
+    max-width: 800px;
+    margin: auto;
+    border-radius: 4px;
 }
 
 .cta-heading {
-    font-family: PlayfairDisplay, serif;
-    font-size: 2.4rem;
-    font-weight: 700;
+    font-family: 'Arial' 'Helvetica', sans-serif;
+    font-size: 4rem; 
+    font-weight: 500;
     color: #ffffff;
-    line-height: 1.15;
-    margin: 0 0 1rem;
-
+    line-height: 1.1;
+    margin: 0 0 0.8rem;
+    letter-spacing: 0.5px;  
+    white-space: nowrap;
 }
 
 .cta-sub {
-    font-family: Montserrat, sans-serif;
-    font-size: 0.95rem;
+    font-family: 'Arial', 'Times New Roman', serif;
+    font-size: 1rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.7;
-    margin: 0 0 2.4rem;
+    text-transform: full-width;
+    letter-spacing: 0.18em;
+    color: rgba(255, 255, 255, 0.85);
+    text-transform: uppercase;
+    margin: 0 0 2.5rem;
 }
-
 
 .cta-buttons {
     display: flex;
-    gap: 16px;
+    gap: 50px; /* Enhanced breathing room between calls to action */
     justify-content: center;
     flex-wrap: wrap;
-
-}
-
-.cta-btn--primary {
-    background: #e8ab18;
-    color: #1a1200;
-    box-shadow: 0 4px 24px rgba(240, 177, 61, 0.45);
-
+    align-items: center;
 }
 
 .cta-btn {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 15px 32px;
+    justify-content: center;
+    height: 48px;
+    gap: 10px;
+    padding: 14px 32px;
     border-radius: 50px;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.82rem;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    text-decoration: none;
     cursor: pointer;
-    transition: all var(--trans);
-    position: relative;
-    overflow: hidden;
+    transition: all 0.3s ease; /* Normalized transition rule */
+}
 
+.cta-btn--primary {
+    
+    background: #e8ab18;
+    color: #1a1200;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 20px rgba(232, 171, 24, 0.3);
+}
+
+.cta-btn--primary:hover {
+    background: #cf9611;
+    border-color: #cf9611;
+    transform: translateY(-2px);
 }
 
 .cta-btn--secondary {
     background: transparent;
     color: #ffffff;
-    border: 2px solid rgba(255, 255, 255, 0.55);
-
+    border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
+.cta-btn--secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* --- Trust Features Bar --- */
 .cta-trust {
     position: relative;
-    margin-top: 2.8rem;
-    font-size: 0.75rem;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    color: #ffffff;
+    z-index: 2;
+    margin-top: 4rem; 
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.4rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.cta-trust p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.cta-trust-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #e8ab18;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .cta-inner { padding: 40px 30px; }
+    .cta-heading { white-space: normal; }
+    .cta-trust {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 3rem;
+    }
+    .cta-trust-dot { display: none; }
+}
+
+/* ==========================================
+   MOBILE & TABLET: CTA SECTION OVERRIDES
+   ========================================== */
+
+@media (max-width: 992px) {
+    .cta-section {
+        padding: 80px 20px 60px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-inner {
+        padding: 40px 20px;
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cta-heading { 
+        font-size: 2.5rem; 
+        white-space: normal; /* Allows text to wrap to the next line */
+        line-height: 1.2;
+    }
+    
+    .cta-sub { 
+        line-height: 1.5; 
+        margin-bottom: 2rem;
+    }
+
+    /* Stack CTA Buttons */
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .cta-btn { 
+        width: 80%; 
+        text-align: center; 
+    }
+
+    /* Stack the Trust Bar */
+    .cta-trust {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    /* Hide the separating dots since it's a vertical list now */
+    .cta-trust-dot { 
+        display: none; 
+    }
+}
+
+/* --- MOBILE PHONE SPECIFIC TWEAKS --- */
+@media (max-width: 768px) {
+    .cta-heading { font-size: 2rem; }
+    .cta-btn { width: 100%; }
 }
