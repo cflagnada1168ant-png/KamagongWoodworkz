@@ -222,8 +222,8 @@
         left: 50%;
         transform: translateX(-50%);
         top: 10px;      /* Floats it nicely above the header line */
-        width: 125px;    /* INCREASED from 95px */
-        height: 125px;   /* INCREASED from 95px */
+        width: 135px;    /* INCREASED from 95px */
+        height: 135px;   /* INCREASED from 95px */
         z-index: 1005;   /* Ensures it stays strictly ON TOP of the dropdown */
     }
 

@@ -1,0 +1,191 @@
+/* Section Container & Dark Background Overlay */
+.cta-booking-section {
+  padding: 100px 20px;
+  position: relative;
+  background: linear-gradient(rgba(26, 21, 18, 0.88), rgba(26, 21, 18, 0.92)), url('your-blueprint-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-booking-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.cta-booking-content {
+  text-align: center;
+}
+
+.cta-booking-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.cta-description {
+  font-size: 1.15rem;
+  color: #d1c7bd;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+/* White Form Card */
+.booking-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.booking-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c2520;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid #f4f1ea;
+  padding-bottom: 15px;
+}
+
+/* 2-Column Responsive Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #2c2520;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.form-group input, 
+.form-group textarea {
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  border: 1px solid #dcd6cd;
+  border-radius: 6px;
+  background-color: #faf9f6;
+  color: #2c2520;
+  transition: all 0.25s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: #8c6239; /* Kamagong Bronze Accent */
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(140, 98, 57, 0.15);
+}
+
+/* Error Dynamic Highlight Hooks */
+.error-message {
+  font-size: 0.8rem;
+  color: #b91c1c;
+  margin-top: 5px;
+  display: none;
+  font-weight: 500;
+}
+
+.form-group.invalid input,
+.form-group.invalid textarea {
+  border-color: #b91c1c;
+  background-color: #fff6f5;
+}
+
+.form-group.invalid .error-message {
+  display: block;
+}
+
+/* Alert Banner Strip */
+.alert-bar {
+  background: #fef2f2;
+  border: 1px solid #fee2e2;
+  color: #b91c1c;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 20px;
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Premium Button Styling */
+.btn-submit {
+  width: 100%;
+  background-color: #8c6239;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 18px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #704e2d;
+  transform: translateY(-1px);
+}
+
+.btn-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+
+.btn-explore:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #ffffff;
+}
+
+/* Responsive Structural Breakpoints */
+@media (max-width: 768px) {
+  .cta-booking-section { padding: 60px 15px; }
+  .cta-booking-content h1 { font-size: 2.2rem; }
+  .booking-card { padding: 25px 20px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-group.full-width { grid-column: span 1; }
+}

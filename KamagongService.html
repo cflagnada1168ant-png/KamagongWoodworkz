@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="navbarnew.css">  
     <link rel="stylesheet" href="cta.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="navbarnew.css">
+    <link rel="stylesheet" href="contact-form.css">
     <script src="navbar.js" defer></script>
+    <script src="contact.js" defer></script>
 </head>
 
 <body>
@@ -39,6 +40,73 @@
     </nav>
 </header>
 
+<section class="cta-booking-section">
+  <div class="cta-booking-container">
+    <div class="cta-booking-content">
+      
+      <h1>Let’s Build Your Dream Furniture Together</h1>
+      <p class="cta-description">
+        Whether you need a bespoke statement piece or a highly functional modular storage system, our process starts with listening to you. Book your personalized interview and on-site ocular visit today.
+      </p>
+
+      <div class="booking-card">
+        <h3>Book Your Ocular Visit &amp; Interview</h3>
+        
+        <form id="ocularBookingForm" novalidate>
+          <div class="form-grid">
+        
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+              <span class="error-message">Please enter your full name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactNumber">Contact Number</label>
+              <input type="tel" id="contactNumber" name="contactNumber" placeholder="+63 9XX XXX XXXX"  required>
+              <span class="error-message">Please enter a valid 10-digit mobile number after +63.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="emailAddress">Email Address</label>
+              <input type="email" id="emailAddress" name="emailAddress" placeholder="youremail@email.com" required>
+              <span class="error-message">A valid Gmail address (@gmail.com) is required.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="projectType">Project Type</label>
+              <input type="text" id="projectType" name="projectType" placeholder="e.g., Modular Kitchen, Custom Dining Table" required>
+              <span class="error-message">Please specify your project type.</span>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="preferredDate">Preferred Ocular Date (Must be 1 week in advance)</label>
+              <input type="date" id="preferredDate" name="preferredDate" required>
+              <span class="error-message">Please select a valid date at least 1 week from today.</span>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="projectDescription">Project Description &amp; Measurements</label>
+              <textarea id="projectDescription" name="projectDescription" rows="4" placeholder="Tell us about your space, wood preferences, or rough dimensions..." required></textarea>
+              <span class="error-message">Please share a brief description of what you need.</span>
+            </div>
+
+          </div>
+
+          <div id="formAlertBar" class="alert-bar">
+            <i class="fas fa-exclamation-circle"></i> Please fix the highlighted fields according to the rules.
+          </div>
+
+          <button type="submit" class="btn-submit">Submit Request</button>
+        </form>
+        
+      </div>
+
+      <a href="index.html#projects" class="btn-explore">Explore Our Projects <i class="fas fa-arrow-right"></i></a>
+
+    </div>
+  </div>
+</section>
 
 
 <section class="services-section">
@@ -51,7 +119,7 @@
 
     <div class="services-grid">
       
-      <div class="service-card">
+      <div class="service-card highlighted-card">
         <div class="service-icon">
           <i class="fas fa-hammer"></i> 
         </div>
@@ -67,7 +135,7 @@
         <p>We don’t just build; we plan. Our team conducts detailed on-site ocular visits and personal interviews to understand your space, lighting, and exact requirements before cutting a single piece of wood.</p>
       </div>
 
-      <div class="service-card">
+      <div class="service-card highlighted-card">
         <div class="service-icon">
           <i class="fas fa-th-large"></i>
         </div>
